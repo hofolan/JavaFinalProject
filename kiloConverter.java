@@ -42,7 +42,7 @@ public class kiloConverter extends JFrame
       
       calcButton = new JButton("Calcumalate");
       
-      ImageIcon image1 = new ImageIcon("10c.jpg");
+      ImageIcon image1 = new ImageIcon("10d.jpg");
       image = new JLabel(image1);
       calcButton.setForeground(Color.BLUE);
       
