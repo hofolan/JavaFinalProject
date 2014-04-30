@@ -16,10 +16,10 @@ public class Card
                             CLUBS = 3;
     // ranks
     // Cards 2 through 9 have face value
-    public final static int ACE = 1,          
-                            JACK = 11,        
-                            QUEEN = 12,       
-                            KING = 13;
+    public final static int ACE = 13,          
+                            JACK = 10,        
+                            QUEEN = 11,       
+                            KING = 12;
                             
     // instance variables
     private int suit;   // The suit of this card, one of the constants
@@ -91,19 +91,19 @@ public class Card
    public String getRankAsString() 
    {
         switch ( rank ) {
-           case 1:   return "Ace";
-           case 2:   return "2";
-           case 3:   return "3";
-           case 4:   return "4";
-           case 5:   return "5";
-           case 6:   return "6";
-           case 7:   return "7";
-           case 8:   return "8";
-           case 9:   return "9";
-           case 10:  return "10";
-           case 11:  return "Jack";
-           case 12:  return "Queen";
-           case 13:  return "King";
+           case 13:   return "Ace";
+           case 1:   return "2";
+           case 2:   return "3";
+           case 3:   return "4";
+           case 4:   return "5";
+           case 5:   return "6";
+           case 6:   return "7";
+           case 7:   return "8";
+           case 8:   return "9";
+           case 9:  return "10";
+           case 10:  return "Jack";
+           case 11:  return "Queen";
+           case 12:  return "King";
            default:  return "??";
         }
     }

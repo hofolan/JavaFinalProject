@@ -35,7 +35,7 @@ public class cardPile extends Deck
    public ArrayList<Card> getHalfDeck()
    {
      
-    return bothPiles.get(0);   
+    return bothPiles.remove(0);   
    }
    
    
@@ -82,6 +82,7 @@ public class cardPile extends Deck
          System.out.println(o);
          System.out.println("\n\n\n");
          System.out.println(pileB.remove(0));
+         System.out.println(pileB.size());
          
       System.out.println("\n\n\n");
       
