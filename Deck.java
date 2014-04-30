@@ -5,7 +5,7 @@ public class Deck
 
    Card [] deck;
    int ct;
-   
+      
    public Deck()
    {
       freshDeck();
@@ -15,7 +15,7 @@ public class Deck
    public void freshDeck()
    {
       deck = new Card[CARDS_IN_DECK];
-      for (int r = Card.ACE; r<=Card.KING;r++)
+      for (int r = 1; r<=Card.ACE;r++)
       {
          for (int s=Card.SPADES;s<=Card.CLUBS;s++)
          {
@@ -24,6 +24,7 @@ public class Deck
          }
       }
      
+   
    
    }
    
@@ -62,13 +63,19 @@ public class Deck
    }
    
    
+      
+   
    public static void main(String [] args) 
    {
       Deck deck = new Deck();
-      deck.shuffle();
       
+      //deck.shuffle();
+      for(int i=0;i<52;i++)
+            
       System.out.println(deck.dealCard());
-      System.out.println(deck.ct);
+      
+      //System.out.println(deck.images[7]);
+      //System.out.println(deck.ct);
       
    }
    

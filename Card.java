@@ -16,16 +16,19 @@ public class Card
                             CLUBS = 3;
     // ranks
     // Cards 2 through 9 have face value
-    public final static int ACE = 13,          
-                            JACK = 10,        
-                            QUEEN = 11,       
-                            KING = 12;
+               
+     public final static int JACK = 10,        
+                             QUEEN = 11,       
+                             KING = 12,
+                             ACE = 13;
                             
     // instance variables
     private int suit;   // The suit of this card, one of the constants
                               // SPADES, HEARTS, DIAMONDS, CLUBS.
                               
     private int rank;  // The rank of this card, from 1 to 13.
+    
+    private String imageTag;// stores string representatin of image file name
                              
    /**
    * Creates a new playing card.
@@ -130,7 +133,25 @@ public class Card
       else
          return true;
    }
+   
+   
+   public void setImageTag(String s)
+   {
+   
+      imageTag = s;
+   }
+   
+   public String getImageTag()
+   {
+      return imageTag;
+   }
 
+
+public static void main(String[]args)
+{
+   Card ner = new Card(2,2);
+   System.out.println(ner.getRank());
+}
 }
     
 

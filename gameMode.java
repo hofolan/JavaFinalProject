@@ -44,6 +44,16 @@ public class gameMode
                
                Card two = playerTwo.takeFromTop();
                
+               imageSort sorter = new imageSort();
+               imageSort sorter2 = new imageSort();
+   
+                 
+               sorter.fixImage(one);
+               sorter2.fixImage(two);
+   
+               System.out.println(sorter.getImage());
+               System.out.println(sorter2.getImage());               
+               
                      
                System.out.println(one + "  vs  "+ two +"\n");
                
@@ -167,6 +177,7 @@ public class gameMode
             
             System.out.println("\n player One wars lost: "+ first.getWarsLost());
             System.out.println("\n player Two wars lost: "+ second.getWarsLost());
+            
             //need user input delay for each loop.
             
             Scanner delay = new Scanner(System.in);
