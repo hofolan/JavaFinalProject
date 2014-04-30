@@ -93,7 +93,11 @@ public class playingWindow extends JFrame
          public void actionPerformed(ActionEvent e)
          {
          
-         JOptionPane.showMessageDialog(null,"you clicked it");
+         ImageIcon newPic = new ImageIcon("queenc.jpg");
+         
+         JLabel newImage = new JLabel(newPic);
+         
+         right.add(newImage);
          }
       }
       
