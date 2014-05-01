@@ -4,6 +4,7 @@
  * Card object cannot change.
  *
  * @Jackie Horton
+ this was basically all taken from Jackie, I modified some of the rank constants a little
  */
 
 public class Card 

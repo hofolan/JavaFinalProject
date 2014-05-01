@@ -5,13 +5,19 @@ public class Deck
 
    Card [] deck;
    int ct;
-      
+   
+   
+   /**
+   constructor: automatically makes a fresh deck and all the cards to go with it.
+   */   
    public Deck()
    {
       freshDeck();
    }
    
-   
+   /**
+   freshDeck() method to create 52 cards
+   */
    public void freshDeck()
    {
       deck = new Card[CARDS_IN_DECK];
@@ -28,20 +34,28 @@ public class Deck
    
    }
    
-   
+   /**
+   dealCard() method
+   @return card object
+   */
    public Card dealCard()
    {
       ct--;
       return deck[ct];
    }
    
-   
+   /**
+   cardsRemaining()
+   @return the number of cards remaining in deck
+   */
    public int cardsRemaining()
    {  
       return ct;
    }
    
-   
+   /**
+   shuffle method
+   */
    public void shuffle()
    {
       int randNum;
@@ -56,7 +70,10 @@ public class Deck
       }
    }
    
-   
+   /**
+   method to detemine whether the deck is empty or not
+   isEmpty()
+   */
    public boolean isEmpty()
    {
       return (cardsRemaining() == 0);

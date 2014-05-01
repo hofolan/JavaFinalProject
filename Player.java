@@ -66,7 +66,7 @@ public class Player
    }
 
 /**
-method to see if players hand is ever empty
+method to see if players hand is ever empty, or if wars lost is greater than three
 @return boolean
 */
    public boolean loser()
@@ -81,8 +81,9 @@ method to see if players hand is ever empty
    return status;
    }
 
-   
-   
+   /**
+   sizeOfHand() method gets the number of elements in the array
+   */
    public int sizeOfHand()
    {
       return CardsInHand.size();

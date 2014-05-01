@@ -7,6 +7,7 @@ public class War
    //FIELDS
    private int warsLost;
    
+   
    //methods
    
    /**
@@ -14,6 +15,7 @@ public class War
    */
    public War()
    {
+      
       warsLost = 0;
    }
    
@@ -36,5 +38,4 @@ public class War
       return warsLost;
    }   
    
-
 }

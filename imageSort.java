@@ -14,18 +14,27 @@ public class imageSort
                 {"4c.jpg","4d.jpg","4h.jpg","4s.jpg"},
                 {"3c.jpg","3d.jpg","3h.jpg","3s.jpg"},
                 {"2c.jpg","2d.jpg","2h.jpg","2s.jpg"}};
+                
+                
    String cardImage;
    
    
       
    //methods
+   
+   /**
+   constructor
+   */
    public imageSort()
    {
      cardImage = "gof";
    }
 
 
-
+/**
+fixImage()method takes a card object and assigns the correct image file
+@param Card object
+*/
    
    public void fixImage(Card obj)
     {
@@ -33,11 +42,12 @@ public class imageSort
       int suit = obj.getSuit();
       
       cardImage = (images[13-rank][3-suit]);
-      
-         
-   
-   }
+    }
 
+   /**
+   method getImage()
+   @return string of the image file name
+   */
    public String getImage()
    {
       return cardImage;
